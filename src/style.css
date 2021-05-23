@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    /*overflow: hidden; */
+}
+
+/*--------------Navbar--Navbar component---------*/
+.navbar{
+    background-color: #fff !important;
+}
+.navbar-brand{
+    font-size: 1.9rem !important;
+    color: blueviolet !important;
+}
+
+.navbar a{
+    font-size: 1.1rem ;
+    text-transform: capitalize ;
+} 
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+.navbar a:hover{
+    color: #3498db !important;
+}
+.brand-name{
+    color: #3498db
+}
+
+/*-----------Header--Home component----*/
+
+#header .header-img{
+    width: 38%;
+} 
+.header-img{
+    text-align: right;
+}
+
+#header h1{
+     font-size: 2.1rem;
+}
+#header h2{
+    font-size: 1.1rem ;
+    text-transform: capitalize
+} 
+
+#header .btn{
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+/*----------------------Animation of image--------------*/
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+/*----------------------Contact component end----------*/
+.contact-head h1{
+     text-align: center;
+}
+
+/*-----------------------footer..............*/
+footer p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
+/*-------------------media query-----------*/
+@media(max-width:991px){
+    .navbar-brand{
+         font-size: 1.5rem !important;
+    }
+
+    .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+    #header .header-img{
+        width: 50%;
+    } 
+}
+
+@media(max-width:768px){
+    #header {
+        margin-top: 20px;
+    }
+    #header h1{
+        font-size: 28px;
+    }
+    #header h2{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    #header .header-img {
+        width: 80%;
+    }
+    footer p{
+        font-size: 10px;
+        
+    }
+}
+@media(max-width:468px){
+    #header .header-img img{
+        width: 50%;
+    }
+}
